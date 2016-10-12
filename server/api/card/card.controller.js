@@ -31,7 +31,6 @@ exports.transferCard = function(req, res ,next) {
 	var cardId = req.body.card;
 	var fromLane = req.body.fromLane;
 	var toLane = req.body.toLane;
-	console.log(req.body);
 
 	if(fromLane === toLane) {
 		return res.json({status: true});
@@ -46,7 +45,7 @@ exports.transferCard = function(req, res ,next) {
 				console.log(err);
 				return res.json({status: false, reason: err});
 			}
-			res.json({status: true})			
+			res.json({status: true});
 		});
 	});
 };
