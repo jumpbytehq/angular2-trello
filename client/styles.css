@@ -1,0 +1,38 @@
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.absolute-right-10 {
+	position: absolute;
+	right: 10px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-25 {
+	margin-top: 10px;
+}
+
+div.dialog.dialog--material {
+	display: none;
+}
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+
+.padding-15 {
+	padding: 15px;
+}
+
+.padding-left-5 {
+	padding-left: 5px;
+}
+
+.display-inline-flex {
+	display: inline-flex;
+}

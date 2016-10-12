@@ -1,0 +1,33 @@
+<div bsModal #addLaneModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" (click)="addLaneModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Add Lane</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Title</span>
+                    <input type="text" class="form-control" [(ngModel)]="newLaneModel.title" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="modal-footer">
+	        	<button type="button" class="btn btn-default" (click)="addLaneModal.hide()">Close</button>
+        		<button class="btn btn-success" (click)="createLane()">Create</button>
+	      	</div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="col-sm-11"></div>
+    <div class="col-sm-1">
+        <button (click)="addLaneModal.show()" class="btn btn-primary">Add Lane</button>
+    </div>
+</div>
+<div class="lane-container">
+    <div *ngFor="let lane of lanes" class="lane">
+        <lane [data]="lane"></lane>
+    </div>
+</div>

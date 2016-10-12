@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <base href="/">
+    <title>Angular QuickStart JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfill -->
+    <script src="https://npmcdn.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://unpkg.com/zone.js@0.6.23?main=browser"></script>
+    <script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
+
+    <script src="https://npmcdn.com/rxjs@5.0.0-beta.6/bundles/Rx.umd.js"></script>
+    <script src="/node_modules/@angular/core/bundles/core.umd.js"></script>
+    <script src="/node_modules/@angular/forms/bundles/forms.umd.js"></script>
+    <script src="/node_modules/@angular/common/bundles/common.umd.js"></script>
+    <script src="/node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
+    <script src="/node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
+    <script src="/node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/dragula/dist/dragula.min.css">
+    <!-- 2. Load our 'modules' -->
+    <link rel="stylesheet" href="app/dist/style.bundle.css">
+  </head>
+  <!-- 3. Display the application -->
+  <body style="background: cadetblue;">
+    <my-app>Loading</my-app>
+  </body>
+  <script src='app/dist/main.bundle.js'></script>
+</html>

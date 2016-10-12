@@ -1,0 +1,20 @@
+.lane {
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	background: gainsboro;
+	margin-right: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.lane-container {
+	display: -webkit-box;
+	padding: 15px;
+	height: 80%;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}

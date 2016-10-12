@@ -1,0 +1,77 @@
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.absolute-right-10 {
+	position: absolute;
+	right: 10px;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-25 {
+	margin-top: 10px;
+}
+
+div.dialog.dialog--material {
+	display: none;
+}
+
+.margin-top-50 {
+	margin-top: 50px;
+}
+
+.padding-15 {
+	padding: 15px;
+}
+
+.padding-left-5 {
+	padding-left: 5px;
+}
+
+.display-inline-flex {
+	display: inline-flex;
+}.toolbar {
+	height: 60px;
+    background: darkslategray;
+    color: white;
+    font-weight: bold;
+}.lane {
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	background: gainsboro;
+	margin-right: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.lane-container {
+	display: -webkit-box;
+	padding: 15px;
+	height: 80%;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}.card {
+	background: white;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 5px;
+	word-wrap: break-word;
+}.height-100 {
+	height: 100px;
+}
+
+.cards-list {
+	max-height: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+/*# sourceMappingURL=style.bundle.css.map*/

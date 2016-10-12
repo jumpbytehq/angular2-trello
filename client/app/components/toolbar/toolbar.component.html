@@ -1,0 +1,38 @@
+<div>
+    <div class="toolbar center">
+        {{appTitle}}
+        <div class="center">
+            <button class="btn btn-info absolute-right-10" (click)="infoModal.show()">
+                <span class="glyphicon glyphicon-info-sign"></span>
+            </button>
+        </div>
+    </div>
+</div>
+<div bsModal #infoModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" (click)="infoModal.hide()" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">This project is built using <strong>Angular 2</strong></h4>
+            </div>
+            <div class="modal-body">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+					    UI Dependencies
+					</a>
+                    <a target="_blank" href="https://github.com/valor-software/ng2-bootstrap" class="list-group-item">ng2-bootstrap</a>
+                    <a target="_blank" 	href="https://github.com/valor-software/ng2-dragula" class="list-group-item">ng2-dragula</a>
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    As there is <strong>no Login</strong> all the data will be <strong>erased in 1 hour</strong>.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" (click)="infoModal.hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
